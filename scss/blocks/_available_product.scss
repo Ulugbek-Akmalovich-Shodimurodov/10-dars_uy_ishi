@@ -1,0 +1,177 @@
+
+
+.section-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 120%;
+
+    color: #01010D;
+}
+.section-paragrif{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+
+    color: #01010D;
+}
+.section-card__list{
+    
+    width: 100%;
+    padding: 30px 0;
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 60px;
+    
+    .section-card__item{
+        width: 260px;
+        height: 320px;
+
+        border: 3px solid #aaa;
+        border-radius: 38px ;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #FFCCCC;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        img{
+            width: 80%;
+        }
+
+        span{
+            position: absolute;
+
+            width: 60px;
+            height: 60px;
+
+            border-radius: 3px;
+            border-bottom-left-radius: 38px;
+            border-top-right-radius: 38px;
+
+            left: 0px;
+            bottom: 0px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 26px;
+            color: #555;
+
+            background: #fff;
+        }
+
+
+    }
+}
+
+.clock-obzor__video{
+    width: 45%;
+    height: 350px;
+    border-radius: 15px;
+}
+.obzor-section-box{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.play-video{
+    width: 160px;
+}
+.commit-box{
+    margin: 60px 0;
+    padding-top: 15px;
+    position: relative;
+
+    max-width: 500px;
+    width: 80%;
+    height: auto;
+
+    border: 1px dashed #ddd;
+    border-radius: 10px;
+}
+.commit-card{
+    // position: absolute;
+    top: 20px;
+    left: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    width: 95%;
+    padding: 20px 20px;
+    margin-left: auto;
+    
+    background: #eee;
+    border-radius: 10px;
+}
+
+.user-box{
+
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.user-box__wrapper{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+
+
+    color: #01010D;
+
+    opacity: 0.7;
+}
+.commit-title{
+    margin: 5px 0;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+
+
+    color: #01010D;
+
+    opacity: 1;
+}
+.user-card__img{
+    width: 60px;
+    height: 60px;
+}
+.tirnoq-icon{
+    width: 80px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    opacity: 0.2;
+}
+
+@media screen and(max-width:800px){
+    .clock-obzor__video{
+        width: 80%;
+        height: 300px;
+        border-radius: 15px;
+    }
+    .section-title{
+        font-size: 30px;
+    }
+    .obzor-section-box{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
