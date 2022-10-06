@@ -43,8 +43,6 @@ function passwordFunc(){
 }
 let passQiymat = passwordFunc()
 
-console.log("pass", passQiymat);
-// console.log(passwordFunc());
 function register(){
     let name = prompt('Ismingizni kiriting');
     let lastName = prompt('Familiyangizni kiriting');
@@ -58,12 +56,32 @@ function register(){
 
     };
 
-    personObj.nameObj ? console.log(passwordFunc()) : register();
+    personObj.nameObj ? console.log(passQiymat) : register();
 
-    personObj.PasswordObj = prompt("Biz sizga kodni jo'natdik kodni kiriting");
+    let pass = prompt("Biz sizga kodni jo'natdik kodni kiriting");
+     
+    if(pass == passQiymat){ 
+        personObj.PasswordObj = pass 
+        return login(personObj) 
+    } else {
+        register()
+        return ("Parol xato kiritildi.");
+    }
 
-    console.log(personObj);
+}
+function login(personobj){
+    let login_parol =  prompt('Login Page Parolni kiriting: ') ;
+    if(personobj.PasswordObj == login_parol){
+        console.log("Muvaffiqiyatli ro'yxatdan o'tdingiz:");
+        return personobj;
+    }
+    else{
+        return "parol xato kiritildi.";
+    }
 
 }
 
-register();
+
+// function Min(a , b , c ){     a > b && a > c ? console.log(a) : b > c && b > a ? console.log(b) : console.log(c); }
+
+// Min(5 , 7 ,1)
